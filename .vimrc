@@ -8,6 +8,8 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 
 " All of your Plugins must be added before the following line
