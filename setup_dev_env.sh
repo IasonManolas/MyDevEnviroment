@@ -17,9 +17,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo -e "${RED}Installing required agnoster fonts..${NC}"
 sudo apt-get install fonts-powerline
 echo -e "${RED}Cloning vimrc and tmuxrc files..${NC}"
-git clone https://github.com/IasonManolas/MyDevEnviroment
-mv MyDevEnviroment/*(D) ~/
-rm -rf MyDevEnviroment
+mv dotFiles/.* ~/
+rm -rf ../MyDevEnviroment
 echo -e "${RED}Installing vim plugin manager..${NC}"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo -e "${RED}Installing vim plugins listed in ~/.vimrc..${NC}"
