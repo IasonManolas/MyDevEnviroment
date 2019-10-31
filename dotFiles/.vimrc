@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'Chiel92/vim-autoformat'
 
 
 " All of your Plugins must be added before the following line
@@ -22,6 +23,9 @@ set rtp+=set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 
 " Always show statusline
 set laststatus=2
+
+" auto format on save on save
+au BufWrite * :Autoformat
 
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256

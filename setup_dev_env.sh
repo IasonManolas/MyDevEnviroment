@@ -5,7 +5,7 @@ NC='\033[0m' # No Color
 echo -e "${RED}Installing vim..${NC}"
 sudo apt-get update
 echo -e "${RED}Installing vim..${NC}"
-sudo apt-get install vim 
+sudo apt-get install vim
 echo -e "${RED}Installing tmux..${NC}"
 sudo apt-get install tmux
 echo -e "${RED}Installing git..${NC}"
@@ -22,6 +22,7 @@ mv dotFiles/.* ~/
 rm -rf ../MyDevEnviroment
 echo -e "${RED}Installing vim plugin manager..${NC}"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+sudo apt install clang-format
 echo -e "${RED}Installing vim plugins listed in ~/.vimrc..${NC}"
 vim +PluginInstall +qall
 echo -e "${RED}Installing tmux plugin manager..${NC}"
