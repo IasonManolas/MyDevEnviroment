@@ -12,6 +12,7 @@ echo -e "${RED}Installing git..${NC}"
 sudo apt-get install git
 echo -e "${RED}Installing zsh..${NC}"
 sudo apt-get install zsh
+chsh -s $(which zsh)
 echo -e "${RED}Installing Oh My Zsh..${NC}"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo -e "${RED}Installing required agnoster fonts..${NC}"
