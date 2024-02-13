@@ -2,7 +2,6 @@
 set -e #exit if a command fails
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-echo -e "${RED}Installing vim..${NC}"
 sudo apt-get update
 echo -e "${RED}Installing vim..${NC}"
 sudo apt-get install vim
@@ -34,4 +33,5 @@ sudo pip install powerline-status
 git clone https://github.com/powerline/fonts.git && cd fonts && sh ./install.sh
 :so %
 #reload tmux conf!!!
+echo -e "${RED}Install tmux plugins by opening vim and typing :PluginInstall ..${NC}"
 echo -e "${RED}Install tmux plugins by pressing prefix+I ..${NC}"
