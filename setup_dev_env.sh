@@ -14,7 +14,7 @@ echo -e "${RED}Installing zsh..${NC}"
 sudo apt-get install zsh
 chsh -s $(which zsh)
 echo -e "${RED}Installing Oh My Zsh..${NC}"
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo -e "${RED}Installing required agnoster fonts..${NC}"
 sudo apt-get install fonts-powerline
 echo -e "${RED}Cloning vimrc and tmuxrc files..${NC}"
