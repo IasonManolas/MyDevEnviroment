@@ -18,7 +18,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 echo -e "${RED}Installing required agnoster fonts..${NC}"
 sudo apt-get install fonts-powerline
 echo -e "${RED}Cloning vimrc and tmuxrc files..${NC}"
-cp -i dotFiles/.* ~/
+cp -ri dotFiles/.* ~/
 #rm -rf ../MyDevEnviroment
 echo -e "${RED}Installing vim plugin manager..${NC}"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
