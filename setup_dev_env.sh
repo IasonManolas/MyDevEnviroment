@@ -32,6 +32,9 @@ sudo apt-get install python-pip
 sudo pip install powerline-status
 git clone https://github.com/powerline/fonts.git && cd fonts && sh ./install.sh
 :so %
+echo -e "${RED}Installing powerlevel10k..${NC}"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 #reload tmux conf!!!
 echo -e "${RED}Install tmux plugins by opening vim and typing :PluginInstall ..${NC}"
 echo -e "${RED}Install tmux plugins by pressing prefix+I ..${NC}"
