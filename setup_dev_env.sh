@@ -11,7 +11,7 @@ echo -e "${RED}Installing git..${NC}"
 sudo apt-get install git
 echo -e "${RED}Installing zsh..${NC}"
 sudo apt-get install zsh
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $(whoami)
 echo -e "${RED}Installing Oh My Zsh..${NC}"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 echo -e "${RED}Installing required agnoster fonts..${NC}"
