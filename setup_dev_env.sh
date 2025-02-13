@@ -28,7 +28,7 @@ echo -e "${RED}Installing tmux plugin manager..${NC}"
 #Install plugins with prefix+I
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo -e "${RED}Installing powerline..${NC}"
-sudo apt-get install python-pip
+sudo apt-get install python3-pip
 sudo pip install powerline-status
 git clone https://github.com/powerline/fonts.git && cd fonts && sh ./install.sh
 :so %
